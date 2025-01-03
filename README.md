@@ -12,3 +12,6 @@ Y = [101,104,109,116,125]
 
 Provide the bias and multiplier# ML-DL
 # ML-DL
+
+
+
