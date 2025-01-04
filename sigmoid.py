@@ -34,3 +34,25 @@ def sigmoid(z):
     g = 1/(1+np.exp(-z))
    
     return g
+
+z_tmp = np.arange(-10,11) #create arrange of values within a range, in an order
+
+
+# Use the function implemented above to get the sigmoid values
+y = sigmoid(z_tmp)
+
+# Code for pretty printing the two arrays next to each other
+np.set_printoptions(precision=3) 
+print("Input (z), Output (sigmoid(z))")
+print(np.c_[z_tmp, y])     #np.c is used for column wise concatenation for two arrays earlier.
+
+##logistic regression is an algorithm used for classification with categorical value, for example if the tumour is malignant or not, email is spammed category or not or anything else ha two options.
+#we need to apply the sigmoid function with, logistic regreesion.
+
+x_train = np.array([0., 1, 2, 3, 4, 5])
+y_train = np.array([0,  0, 0, 1, 1, 1])  #binary class problem value are 0 and 1
+
+w_in = np.zeros((1))
+b_in = 0
+
+
