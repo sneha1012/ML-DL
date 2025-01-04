@@ -1,4 +1,5 @@
 #Types of Normalisation / feature scaling methods. Zscore means using the standard deviation of the feature and also average of each feature.
+#Feature scaling is important when one feature is much larger in scale or (much smaller) than the other.
 def zscore_normalise_features(X):
     """
     computes X, zscore normlaised by columns
@@ -18,6 +19,5 @@ def zscore_normalise_features(X):
     X_norm = (X - mu)/ sigma
 
     return (X_norm, mu, sigma)
-    
-    
+  
     
